@@ -20,6 +20,9 @@ import { RouterLink, RouterView } from 'vue-router'
 :root {
   --dark: #212219;
 }
+.text-secondary {
+  color: #999;
+}
 #layout {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--dark);

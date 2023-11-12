@@ -1,16 +1,15 @@
 <template>
-  <div class="about">
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat error vitae corporis non soluta, eum excepturi dolores ipsa aperiam, ratione explicabo ducimus provident necessitatibus. Exercitationem.</p>
+  <div class="about-wrapper">
+    <div class="page-header">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat error vitae corporis non soluta, eum excepturi dolores ipsa aperiam, ratione explicabo ducimus provident necessitatibus. Exercitationem.</p>
+    </div>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped lang="scss">
+.page-header {
+  text-align: center;
+  border-bottom: 1px solid #f1f1f1;
 }
 </style>
