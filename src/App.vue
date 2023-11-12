@@ -29,6 +29,9 @@ import { RouterLink, RouterView } from 'vue-router'
   font-weight: normal;
   line-height: 1.3;
 }
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
 .text-center {
   text-align: center;
 }
