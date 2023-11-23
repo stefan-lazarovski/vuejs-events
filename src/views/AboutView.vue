@@ -1,15 +1,12 @@
 <template>
-  <div class="about-wrapper">
-    <div class="page-header">
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat error vitae corporis non soluta, eum excepturi dolores ipsa aperiam, ratione explicabo ducimus provident necessitatibus. Exercitationem.</p>
-    </div>
+  <div class="about-page">
+    <section class="page-header about-header py-5 lg:py-[3rem]">
+      <h1 class="text-center text-white-200 text-4xl font-bold mb-5 lg:mb-10">About us</h1>
+      <p class="text-white text-center lg:w-2/5 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto provident sit laboriosam quisquam doloribus facilis molestias optio illo molliti</p>
+    </section>
   </div>
 </template>
 
 <style scoped lang="scss">
-.page-header {
-  text-align: center;
-  border-bottom: 1px solid #f1f1f1;
-}
+
 </style>

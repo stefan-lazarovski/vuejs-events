@@ -8,10 +8,13 @@
 </script>
 
 <template>
-  <RouterLink class="event" :to="{name: 'event-details', params: {id: event.id}}">
+  <RouterLink class="event border border-gray-800 text-slate-200 p-5 hover:border-gray-300 ease-in-out duration-500" :to="{name: 'event-details', params: {id: event.id}}">
     <div class="event-card">
-      <h2>{{ event.title }}</h2>
-      <span class="meta">@{{ event.time }} on {{ event.date }}</span>
+      <div class="thumbnail mb-5">
+        <img src="../assets/images/event3.jpg" alt="{{ event.title }}">
+      </div>
+      <h2 class="text-3xl mb-5">{{ event.title }}</h2>
+      <span class="meta text-gray-400">@{{ event.time }} on {{ event.date }}</span>
     </div>
   </RouterLink>
 </template>
@@ -28,9 +31,6 @@ h3 {
   font-size: 1.2rem;
 }
 .event-card {
-  padding: max(0.5rem, 2vw);
   cursor: pointer;
-  border: 1px solid #d9d9d9;
-  margin-bottom: 2rem;
 }
 </style>

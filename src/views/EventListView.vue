@@ -15,19 +15,17 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="text-center">Events for Good</h1>
-  <div id="home" class="events-wrapper">
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
+  <div class="page-wrapper events-page">
+    <section class="page-header py-5 lg:py-[3rem]">
+      <h1 class="text-center text-white-200 text-4xl font-bold mb-5 lg:mb-10">Events for Good</h1>
+      <p class="text-white text-center lg:w-2/5 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto provident sit laboriosam quisquam doloribus facilis molestias optio illo molliti</p>
+    </section>
+    <section class="events-wrapper flex justify-between	lg:w-fit gap-5 mx-auto">
+      <EventCard v-for="event in events" :key="event.id" :event="event" />
+    </section>
   </div>
 </template>
 
 <style scoped lang="scss">
-.events-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .event-card {
-    width: fit-content;
-  }
-}
+
 </style>

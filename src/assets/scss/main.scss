@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'nunito-bold';
+    src: url('@/assets/fonts/nunito-bold.ttf'), format('ttf'),
+    url('@/assets/fonts/nunito-bold.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-black';
+    src: url('@/assets/fonts/nunito-black.ttf') format('ttf'),
+        url('@/assets/fonts/nunito-black.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-regular';
+    src: url('@/assets/fonts/nunito-regular.ttf') format('ttf'),
+        url('@/assets/fonts/nunito-regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'nunito-light';
+    src: url('@/assets/fonts/nunito-light.ttf') format('ttf'),
+        url('@/assets/fonts/nunito-light.woff') format('woff');
+    font-display: swap;
+}
+
+$font-light: 'nunito-light';
+$font-regular: 'nunito-regular';
+$font-bold: 'nunito-bold';
+$font-black: 'nunito-black';
+
+:root {
+    --font-light: $font-light;
+    --font-regular: $font-regular;
+    --font-bold: $font-bold;
+    --font-black: $font-black;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgba(10,11,11,1) 0%, rgba(10,12,14,1) 35%, rgba(16,17,18,1) 100%);
+    color: white !important;
+    font-family: $font-regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-bold;
+}
